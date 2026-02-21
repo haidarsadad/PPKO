@@ -36,13 +36,14 @@ body {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://images.unsplash.com/featured/?herbal');
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../assets/img/tanaman.jpg');
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    text-align: center
+    text-align: center;
 }
 
 .section {
