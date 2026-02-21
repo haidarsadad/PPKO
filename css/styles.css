@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    z-index: 1000
+}
+
+.nav-inner {
+    width: 100%;
+    max-width: 1200px;
+    /* lebar ideal layar */
+    padding: 0 40px;
+    /* padding kiri-kanan */
+    display: flex;
+    justify-content: space-between;
+    /* logo kiri, menu kanan */
+    align-items: center;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://images.unsplash.com/featured/?herbal');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center
+}
+
+.section {
+    padding: 100px 60px
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    margin: 15px;
+    text-align: center
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #f4623a;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none
+}
+
+.menu a {
+    margin-left: 25px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.menu a:hover {
+    opacity: .7;
+}
