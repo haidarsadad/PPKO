@@ -1,10 +1,92 @@
-<!DOCTYPE html><html><head><title>Teh Seruas</title><link rel="stylesheet" href="css/styles.css"></head>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teh Seruas - PPKO Desa Wates</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
 <body>
-<div class="nav"><div>DPM - PPKO</div><div><a href="produk.html">Kembali</a></div></div>
-<div class="section"><h1>Teh Seruas</h1>
-<h3>Deskripsi</h3><p>Teh herbal serai dan lengkuas</p>
-<h3>Bahan</h3><p>Serai, lengkuas</p>
-<h3>Khasiat</h3><p>Imun, antioksidan</p>
-<h3>Proses</h3><p>Pengeringan dan pengemasan</p>
-</div>
-</body></html>
+
+    <!-- NAVBAR -->
+    <div class="nav">
+        <div class="nav-inner">
+            <div class="logo">DPM - PPKO</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="produk.html">Produk</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="detail-hero">
+        <h1>Teh Seruas</h1>
+    </div>
+
+    <!-- DETAIL CONTENT -->
+    <div class="detail-container">
+        <div class="detail-grid">
+
+            <!-- IMAGE -->
+            <div class="detail-image">
+                <img src="assets/img/teh-seruas.jpg" alt="Teh Seruas">
+            </div>
+
+            <!-- INFO -->
+            <div class="detail-info">
+                <h2>Teh Seruas</h2>
+                <p>
+                    Teh herbal berbahan dasar serai dan lengkuas yang diolah
+                    melalui proses higienis berbasis pemberdayaan masyarakat
+                    Desa Wates.
+                </p>
+
+                <!-- TABS -->
+                <div class="detail-tabs">
+                    <button class="detail-tab active" onclick="openDetailTab('deskripsi',this)">Deskripsi</button>
+                    <button class="detail-tab" onclick="openDetailTab('bahan',this)">Bahan</button>
+                    <button class="detail-tab" onclick="openDetailTab('khasiat',this)">Khasiat</button>
+                    <button class="detail-tab" onclick="openDetailTab('proses',this)">Proses</button>
+                </div>
+
+                <!-- CONTENT -->
+                <div id="deskripsi" class="detail-content active">
+                    <p>Minuman herbal alami berbasis TOGA dengan cita rasa segar dan manfaat kesehatan.</p>
+                </div>
+
+                <div id="bahan" class="detail-content">
+                    <ul>
+                        <li>Serai</li>
+                        <li>Lengkuas</li>
+                        <li>Air</li>
+                    </ul>
+                </div>
+
+                <div id="khasiat" class="detail-content">
+                    <ul>
+                        <li>Meningkatkan imunitas</li>
+                        <li>Antioksidan alami</li>
+                        <li>Melancarkan pencernaan</li>
+                    </ul>
+                </div>
+
+                <div id="proses" class="detail-content">
+                    <p>Panen → Pembersihan → Pengeringan → Penghalusan → Pengemasan</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2026 Dewan Perwakilan Mahasiswa — Program PPKO Desa Wates
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
